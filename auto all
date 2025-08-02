@@ -1,9 +1,9 @@
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Window = Library:NewWindow("Script")
  
-local Tab = Window:NewSection("Credits: TGMANKASKE")
+local Section = Window:NewSection("Credits: TGMANKASKE")
  
-Tab:CreateToggle("Inf. Money", function(no)
+Section:CreateToggle("Inf. Money", function(no)
 _G.GetWins = no
 while _G.GetWins== true do
     wait(0.3)
@@ -21,7 +21,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Playe
 end
 end)
  
-Tab:CreateToggle("Auto Upgrade All", function(no)
+Section:CreateToggle("Auto Upgrade All", function(no)
 _G.Gets = no
 while _G.Gets== true do
     wait(0.5)
@@ -49,9 +49,9 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Upgra
 end
 end)
  
-local Tab = Window:NewSection("Links")
+local Section = Window:NewSection("Links")
  
-Tab:CreateButton("Discord Group", function()
+Section:CreateButton("Discord Group", function()
 print("HI")
  
 setclipboard("https://discord.gg/8A6k73JqCM")
@@ -59,7 +59,7 @@ toclipboard("https://discord.gg/8A6k73JqCM")
  
 end)
  
-Tab:CreateButton("Youtube", function()
+Section:CreateButton("Youtube", function()
 print("HI")
  
 setclipboard("https://www.youtube.com/@TGMANKASKE")
